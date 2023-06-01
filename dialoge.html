@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+      dialog{
+        border: none;
+        background-color: blue;
+        color: #fff;
+        width: 500px;
+        font-size: 20px;
+        border-radius: 10px;
+
+
+      }
+
+#cancel{
+  font-size: 35px;
+  color: red;
+  background-color:rgb(28, 211, 25);
+  border:none;
+  border-radius: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    
+       <h1>this a dialog </h1>
+    
+    <dialog id="ssss">
+        <button type="button" onclick="closedialog();" id="cancel"> &times; </button>
+        <h1>this is dialog</h1>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ea totam, libero sapiente temporibus delectus asperiores? Iure corrupti totam voluptatem eius. Id, dolores accusamus nisi nobis laboriosam deserunt? Mollitia, obcaecati.</p>
+   </dialog>
+
+
+     <button onclick="opendialog();" id="btn">POPUP</button>
+      
+     <script>
+          function opendialog(){
+            document.getElementById("ssss").show();
+            document.getElementById("btn").style.display="none";
+
+          }
+          function closedialog(){
+            document.getElementById("ssss").close();
+            document.getElementById("btn").style.display="block";
+          }
+     </script>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Canvas 
+</title>
+
+<style>
+    h1
+{
+color: green;
+text-align:center;
+}
+p
+{
+color:brown;
+border: solid 2px blue;
+font-size: 25px;
+}
+
+</style>
+</head>
+<body>
+<h1>
+Text Inside the Circle Shape    <!--CANVAS CAN DRAW COLOR TEST WUTH OR WITHOUT ANIMATIONS-->
+</h1>
+<canvas id="rectangleCircle" width="300" height="200" style="border:2px solid navy;">
+</canvas>
+<script>
+var circle = document.getElementById("rectangleCircle");// with id drawing circle shape with script
+var creatingCircle = circle.getContext("2d");//get the circle type from 2d shape
+creatingCircle.beginPath();//circle shape begin
+creatingCircle.arc(150,100,100,4,4*Math.PI);//circle x, y and size of the circle
+creatingCircle.stroke();//stroke of the circle
+creatingCircle.font = "30px Arial";//Creating a font
+creatingCircle.strokeText("CANVAS",90,110);// Creating text inside the circle
+</script>
+</body>
+</html>

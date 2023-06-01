@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>webpage1</title>
+
+</head>
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+<body>
+    <h1>
+         navigation bar
+      </h1>
+      
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <nav class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fieldset"></i>
+          </button>
+          <nav class="dropdown-content">
+            <a href="#">contact</a>
+            <a href="#">requier</a>
+            <a href="#">link data</a>
+            <a href="#">bio</a>
+          </nav>
+        </nav> 
+        <nav class="dropdown">
+            <button class="dropbtn">About
+              <i class="fieldset"></i>
+            </button>
+            <nav class="dropdown-content">
+              <a href="#">sign in</a>
+              <a href="#">linked in</a>
+              <a href="#">requier</a>
+              <a href="#">bio</a>
+            </nav>
+          </nav> 
+      </nav>
+      <h2>dropdown </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse veritatis eum assumenda deleniti? Perferendis facilis iure, nihil, quos reprehenderit hic totam doloribus harum nisi minus magnam accusantium quaerat officiis.</p>  
+    
+</body>
+</html>

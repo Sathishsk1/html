@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metertag</title>
+    <style>
+        progress{
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <center> <h1>meter tag</h1></center>
+    <hr>
+    <h2>meter tag</h2>
+<meter></meter>
+<br>
+<h2>static meter tag</h2>
+<meter min="1" max="100" value="80"></meter>
+<br>
+<h2>dynamic meter tag</h2>
+<meter min="1" max="100" id="meter"></meter>
+
+<script>
+    var gmin=1;
+    function callmeter(){
+        if(gmin<=100){
+            gmin++;
+            document.getElementById("meter").value=gmin;
+        }
+    }
+
+    setInterval("callmeter()",100);
+</script>
+</body>
+</html>

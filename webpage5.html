@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>form</title>
+    <style>
+        
+        input {
+ width: 100%;
+  padding: 12px;
+  border: 1px solid #c36262;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 19px;
+}
+
+        input[type=submit] {
+         background-color: #04AA6D;
+         color: white;
+        }
+    .container {
+            background-color: #f1f1f1;
+                 padding: 20px;
+            }
+
+    </style>
+</head>
+<body>
+     <h1>Log In</h1>
+    <div>
+        <div class="container">
+            <form action="">
+              <label for="usrname">Username</label>
+              <input type="text" id="name" name="usrname" required>
+          
+              <label for="psw">Password</label>
+              <input type="password" id="pass" name="pass"  required>
+              <p style="color: red; display: none; margin-left: 20px; font-size: 20px; " id="error">please enter 8 charcter password</p>
+               
+           
+            </form>
+            <button onclick="passCheck()"> login</button>
+          </div>
+          <script>
+            function passCheck(){
+              let p = document.getElementById("pass"). value.length;
+              let t = document.getElementById("name"). value;
+              if(p < 8 || t==""){
+                document.getElementById("error").style.display="block";
+              }
+else{
+  document.getElementById("error").style.display="none";
+  alert("login is completed");
+
+              }
+  
+}
+      </script>
+          </div>
+
+    
+</body>
+</html>
